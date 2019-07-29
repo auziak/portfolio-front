@@ -1,0 +1,47 @@
+// Widescreens
+@include mediaXl {
+}
+// Desctops & Laptops
+@include mediaLg {
+}
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  .menu-nav {
+    transform: translate3d(100%, 0, 0);
+    height: 75vh;
+  }
+  .menu a.nav-link {
+    font-size: 24px;
+  }
+  div.menu-branding {
+    transform: translate3d(-100%, 0, 0);
+    height: 25vh;
+    .portrait {
+      background: url(../img/ya_auziak_small.jpg);
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+// Smartphones
+@include mediaSm {
+  main#home .lg-heading {
+    margin-top: 10vh;
+  }
+}
