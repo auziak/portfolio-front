@@ -10,7 +10,7 @@
   .btn-line {
     width: 28px;
     height: 3px;
-    background: #fff;
+    background: set-color($primary-color);
     margin-bottom: 5px;
     @include easeOut;
   }
@@ -84,7 +84,7 @@
     .portrait {
       width: 369px;
       height: 369px;
-      background: url(../img/ya_auziak1.jpg);
+      background: url("../img/ya_auziak1.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -110,7 +110,8 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: #fff;
+    font-weight: 300;
+
     @include easeOut;
 
     &:hover {

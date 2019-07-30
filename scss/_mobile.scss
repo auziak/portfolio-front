@@ -38,9 +38,29 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
 }
 // Smartphones
 @include mediaSm {
+  main#home .lg-heading {
+    margin-top: 10vh;
+  }
+  main#about .lg-heading {
+    margin-top: 10vh;
+  }
+  main#home .lg-heading {
+    margin-top: 10vh;
+  }
   main#home .lg-heading {
     margin-top: 10vh;
   }

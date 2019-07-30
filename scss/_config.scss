@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #fff;
+$secondary-color: #40e0d0;
 $show-home-image: true;
 $home-image: url(../img/comp.jpg);
 $background-opacity: 0.6;
@@ -22,6 +22,14 @@ $background-opacity: 0.6;
         z-index: -1;
       }
     }
+  }
+}
+
+@function set-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 
