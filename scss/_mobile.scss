@@ -1,5 +1,8 @@
 // Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desctops & Laptops
 @include mediaLg {
@@ -49,6 +52,10 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // Smartphones
 @include mediaSm {
@@ -58,10 +65,13 @@
   main#about .lg-heading {
     margin-top: 10vh;
   }
-  main#home .lg-heading {
+  main#work .lg-heading {
     margin-top: 10vh;
   }
   main#home .lg-heading {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
