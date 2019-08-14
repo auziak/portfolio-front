@@ -1,5 +1,8 @@
-$primary-color: #333;
-$secondary-color: #40e0d0;
+// $primary-color: #333;
+// $primary-color: #fff;
+$primary-color: #17252a;
+// $secondary-color: #40e0d0;
+$secondary-color: #3aafa9;
 $show-home-image: true;
 $home-image: url(../img/comp.jpg);
 $background-opacity: 0.6;
@@ -10,6 +13,7 @@ $background-opacity: 0.6;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-position: center bottom;
 
       &:after {
         content: "";

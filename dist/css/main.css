@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #262626;
+    background: #0e161a;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #333;
+    background: #17252a;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 369px;
       background: url("../img/ya_auziak1.jpg");
       border-radius: 50%;
-      border: solid 3px #40e0d0; }
+      border: solid 3px #3aafa9; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #40e0d0; }
+      color: #3aafa9; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -74,7 +74,7 @@
     font-weight: 300;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #40e0d0; }
+      color: #3aafa9; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -92,7 +92,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #333;
+  background: #17252a;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -101,7 +101,8 @@ body {
   body#bg-img {
     background: url(../img/comp.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center bottom; }
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -109,7 +110,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(51, 51, 51, 0.6);
+      background: rgba(23, 37, 42, 0.6);
       z-index: -1; }
 
 h1,
@@ -124,9 +125,41 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(56, 56, 56, 0.5); }
+    background: rgba(27, 43, 49, 0.5); }
+
+.iconify {
+  width: 28px;
+  height: 32px;
+  position: relative;
+  top: 4px;
+  left: -6px; }
+
+.fa-html5 {
+  color: #ff7f50; }
+
+.fa-css3 {
+  color: #1e90ff; }
+
+.fa-js {
+  color: #ffd700; }
+
+.fa-react {
+  color: #00bfff; }
+
+.fa-node-js {
+  color: #008000; }
+
+.fa-bootstrap {
+  color: #663399; }
+
+#redux {
+  color: #9400d3; }
+
+#mongo {
+  color: #228b22; }
 
 a {
   color: #fff;
@@ -138,7 +171,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #40e0d0; }
+  color: #3aafa9; }
 
 main {
   padding: 4rem;
@@ -147,8 +180,14 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
+      main .icons a .fa-github:hover {
+        color: #000;
+        transition: all 0.5s ease-out; }
+      main .icons a .fa-linkedin:hover {
+        color: #00bfff;
+        transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #40e0d0;
+        color: #3aafa9;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -168,7 +207,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #40e0d0; }
+    border: solid 3px #3aafa9; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -179,9 +218,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #404040;
+    background: #20343a;
     padding: 0.5rem;
-    border-bottom: #40e0d0 5px solid; }
+    border-bottom: #3aafa9 5px solid; }
 
 .projects {
   display: grid;
@@ -192,7 +231,7 @@ main {
     border: 3px solid #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #40e0d0;
+      border-color: #3aafa9;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -210,7 +249,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 1.5rem 2rem;
-      background: #40e0d0;
+      background: #3aafa9;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -221,7 +260,13 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #40e0d0;
+    background: #3aafa9;
+    color: #000; }
+  .btn.btn-dark:hover, .btn-dark:hover {
+    background: #3aafa9;
+    color: #000; }
+  .btn.btn-light:hover, .btn-light:hover {
+    background: #3aafa9;
     color: #000; }
 
 .btn-dark {
@@ -229,13 +274,13 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #b3b3b3;
+  background: #e7eff2;
   color: #333; }
 
 #footer {
   text-align: center;
   padding: 1rem;
-  background: #1a1a1a;
+  background: #050809;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {

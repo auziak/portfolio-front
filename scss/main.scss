@@ -15,6 +15,10 @@ body {
   line-height: 1.5;
 }
 
+// #sm-heading {
+//   display: inline;
+// }
+
 h1,
 h2,
 h3 {
@@ -24,10 +28,47 @@ h3 {
     font-size: 6rem;
   }
   &.sm-heading {
+    font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
+    // display: inline;
+    // width: 80%;
   }
+}
+
+.iconify {
+  width: 28px;
+  height: 32px;
+  position: relative;
+
+  top: 4px;
+  left: -6px;
+}
+
+.fa-html5 {
+  color: #ff7f50;
+}
+.fa-css3 {
+  color: #1e90ff;
+}
+.fa-js {
+  color: #ffd700;
+}
+.fa-react {
+  color: #00bfff;
+}
+.fa-node-js {
+  color: #008000;
+}
+.fa-bootstrap {
+  color: #663399;
+}
+#redux {
+  color: #9400d3;
+}
+#mongo {
+  color: #228b22;
 }
 
 a {
@@ -55,6 +96,16 @@ main {
 
     a {
       padding: 0.4rem;
+
+      .fa-github:hover {
+        color: #000;
+        @include easeOut;
+      }
+
+      .fa-linkedin:hover {
+        color: #00bfff;
+        @include easeOut;
+      }
 
       &:hover {
         color: $secondary-color;
@@ -171,6 +222,14 @@ main {
     background: $secondary-color;
     color: set-color($secondary-color);
   }
+  &.btn-dark:hover {
+    background: darken($secondary-color, 0);
+    color: set-color($secondary-color);
+  }
+  &.btn-light:hover {
+    background: $secondary-color;
+    color: set-color($secondary-color);
+  }
 }
 
 .btn-dark {
@@ -181,7 +240,7 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: lighten($primary-color, 80);
   color: #333;
 }
 
