@@ -40,7 +40,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -84,7 +84,7 @@
     .portrait {
       width: 369px;
       height: 369px;
-      background: url("../img/ya_auziak1.jpg");
+      background: url("../img/avatar_small_b&w_1.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }

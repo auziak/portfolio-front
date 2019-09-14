@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   color: set-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -44,6 +44,11 @@ h3 {
 
   top: 4px;
   left: -6px;
+}
+
+.iconify[data-icon='mdi:jquery'] {
+  color: #87cefa;
+  background: #0000cd;
 }
 
 .fa-html5 {
@@ -132,8 +137,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    'bioimage bio bio'
+    'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -200,15 +205,15 @@ main {
     border-radius: 15px;
     @include easeOut;
 
-    &:hover {
-      padding: 1.5rem 2rem;
-      background: $secondary-color;
-      color: set-color($secondary-color);
-      span {
-        color: set-color($secondary-color);
-      }
-      // @include easeOut;
-    }
+    // &:hover {
+    //   // padding: 1.5rem 2rem;
+    //   // background: $secondary-color;
+    //   // color: set-color($secondary-color);
+    //   // span {
+    //   //   color: set-color($secondary-color);
+    //   // }
+    //   // @include easeOut;
+    // }
   }
 }
 
@@ -227,7 +232,7 @@ main {
     color: set-color($secondary-color);
   }
   &.btn-light:hover {
-    background: $secondary-color;
+    background: lighten($secondary-color, 0);
     color: set-color($secondary-color);
   }
 }
@@ -251,4 +256,4 @@ main {
   height: 60px;
 }
 
-@import "mobile";
+@import 'mobile';
