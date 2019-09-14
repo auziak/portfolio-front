@@ -306,11 +306,11 @@ main {
     transform: translate3d(-100%, 0, 0);
     height: 25vh; }
     div.menu-branding .portrait {
-      background: url(../img/ya_auziak_small.jpg);
+      background: url(../img/avatar_small_b&w_2.jpg);
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
