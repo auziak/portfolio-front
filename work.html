@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/aed2baf1ed.js"></script>
+    <script src="js/work.js" defer></script>
     <title>View My Work</title>
   </head>
   <body>
@@ -23,37 +24,58 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
+            <a href="about.html" class="nav-link"> About Me </a>
           </li>
           <li class="nav-item current">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
+            <a href="work.html" class="nav-link"> My Work </a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact Me
-            </a>
+            <a href="contact.html" class="nav-link"> Contact Me </a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="work">
       <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-      <h2 class="sm-heading">
-        Check out some of my projects...
-      </h2>
+      <h2 class="sm-heading">Check out some of my projects...</h2>
       <div class="projects">
         <div class="item">
-          <a href="#!">
-            <img src="img/YouTranslate.png" alt="project" />
+          <a
+            id="react-quiz"
+            href="https://auziak.github.io/react-quiz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img height="180px" src="img/quiz-time.png" alt="project" />
+          </a>
+          <a
+            href="https://auziak.github.io/react-quiz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a
+            href="https://github.com/auziak/react-quiz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <div class="item">
+          <a
+            id="you-translate"
+            href="https://auziak.github.io/you-translate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img height="180px" src="img/you-translate.jpg" alt="project" />
           </a>
           <a
             href="https://auziak.github.io/you-translate"
@@ -73,8 +95,13 @@
           </a>
         </div>
         <div class="item">
-          <a href="#!">
-            <img src="img/MERN-stack-App.png" alt="project" />
+          <a
+            id="shopping-list"
+            href="https://blooming-tundra-96945.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img height="180px" src="img/shopping.png" alt="project" />
           </a>
           <a
             href="https://blooming-tundra-96945.herokuapp.com/"
@@ -95,9 +122,7 @@
         </div>
       </div>
     </main>
-    <footer id="footer">
-      Copyright &copy; 2019-2020
-    </footer>
+    <footer id="footer">Copyright &copy; 2019-2020</footer>
 
     <script src="js/main.js"></script>
   </body>
