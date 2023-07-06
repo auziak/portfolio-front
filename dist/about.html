@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/aed2baf1ed.js"></script>
     <title>About Me</title>
   </head>
   <body>
@@ -42,46 +41,70 @@
       <h2 class="sm-heading">Let me tell you about me...</h2>
       <div class="about-info">
         <img
-          src="img/avatar_small_2.jpg"
+          src="img/from_mc_380x380.jpg"
           alt="Andrii Auziak"
           class="bio-image"
+          height="290px"
         />
         <div class="bio">
           <h3 class="text-secondary">BIO</h3>
           <p>
-            Hi, My name is Andrii, I'm 31. In 2012 I get BS degree in Economic
-            Cybernetics. In march of 2018 I began to study JavaScript on courses
-            form Cyber Bionic Systematicts. JavaScript became my love, so I
-            wantend to learn more by repeating YouTube gurus and creating my own
-            projects. In December 2019 I get my first job as front-end developer
-            in company SupportYourApp where I work till today.
+            Hi, My name is Andrii, I'm <span id="age">34</span> y.o. In 2012 I
+            get BS degree in Economic Cybernetics. In march of 2018 I began to
+            study JavaScript on courses form Cyber Bionic Systematicts.
+            JavaScript became my love, so I wantend to learn more by repeating
+            YouTube gurus and creating my own projects. In December 2019 I get
+            my first job as front-end developer in company SupportYourApp where
+            I work till today.
           </p>
         </div>
         <div class="job job-1">
-          <h3>JavaScript Courses</h3>
-          <h6>Cyber Bionic Systematicts</h6>
+          <h3>JavaScript courses & Self taught</h3>
+          <h6>Cyber Bionic Systematicts & YouTube (2018 - 2019)</h6>
           <p>
-            JavaScript Essential - march 2018; JavaScript Advanced - april 2018;
-            Location: Evhena Sverstiuka 19, Kyiv
+            In Spring of 2018 I took a JavaScript course. After that I proceeded
+            my learning using youtube courses and front-end related
+            documentation. And started buildin my own pet projects with gained
+            knowledges.
           </p>
         </div>
         <div class="job job-2">
-          <h3>Self taught</h3>
-          <h6>YouTube & Documentation</h6>
+          <h3>Junior Front-end developer</h3>
+          <h6>SupportYourApp (2019 - 2021)</h6>
           <p>
-            Learning from yuotube courses and projects and creating my own
-            websites with gained knowledges
+            <span class="underscore">Responsibilities:</span> Maintenance,
+            adding features, increasing system performance, and code
+            optimization of the big and complicated project. Rewriting the
+            front-end part of the project to ReactJS. Also maintaining the
+            company's website and creation of landing pages.
+          </p>
+          <p>
+            <span class="underscore">Project:</span> Custom CRM system and
+            company's website.
           </p>
         </div>
         <div class="job job-3">
-          <h3>Junior Front-End Developer</h3>
-          <h6>SupportYourApp</h6>
-          <p>Mastering my JavaScript skills with custom CRM.</p>
+          <h3>Middle Front-End Developer</h3>
+          <h6>EPAM Anywhere (2021 - present time)</h6>
+          <p>
+            <span class="underscore">Responsibilities:</span> Maintaining the
+            companies websites, creation of a new product, writing unit tests,
+            bug fixing, code review, code refactoring, and implementing tools
+            for analytics. Also implementing AI-based solution for the
+            optimization of customer experience on one of our web platforms.
+          </p>
+          <p>
+            <span class="underscore">Project:</span> Webstore for services and
+            webstore for products.
+          </p>
         </div>
       </div>
     </main>
-    <footer id="footer">Copyright &copy; 2019-2020</footer>
+    <footer id="footer">
+      Copyright &copy; 2019-<span id="footer-output">2024</span>
+    </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
   </body>
 </html>
